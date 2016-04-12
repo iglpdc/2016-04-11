@@ -2,7 +2,6 @@
 layout: workshop
 root: .
 venue: Boston University
-address: FIXME (street address of home location)
 country: United-States
 language: en
 latlng: 41.7901128,-87.6007318 #FIXME
@@ -123,7 +122,13 @@ Participants should bring their laptops and plan to participate actively. By the
 </p>
 
 <hr/>
-
+{% if page.etherpad %}
+<p>
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
 <!--
   SCHEDULE
 
@@ -149,24 +154,15 @@ Participants should bring their laptops and plan to participate actively. By the
       </tr>
       <tr>
           <td>
-              <a href="http://www.datacarpentry.org/2016-01-19-sbu/DataCarpentry_Intro.pdf">Intro to Data Carpentry</a>
+              <a href="./DataCarpentry_Intro.pdf">Intro to Data Carpentry</a>
           </td>
           <td>
               Sheldon
           </td>
       </tr>
-        <tr>
-        <td>
-          <a href="https://jasonjwilliamsny.github.io/cloud-genomics/">
-            Getting started with cloud computing
-          </a>
-        </td>
-        <td>
-        	Sheldon
-        </td>
       <tr>
         <td>
-          <a href="https://github.com/datacarpentry/datadescription-genomics/blob/master/lessons/01-intro-to-ecoli-evo-experient.md">Introduction
+          <a href="https://github.com/JasonWilliamsNY/datadescription-genomics/blob/master/lessons/01-intro-to-ecoli-evo-experient.md">Introduction
         </td>
         <td>
         	Sheldon
@@ -182,7 +178,15 @@ Participants should bring their laptops and plan to participate actively. By the
           	Sheldon
           </td>
       </tr>
-
+      <tr>
+        <td>
+          <a href="https://github.com/JasonJWilliamsNY/datadescription-genomics/blob/master/lessons/02-examining-sra-runtable.md">
+            Getting started with the data
+          </a>
+        </td>
+        <td>
+        	Sheldon
+        </td>
       </tr>
          <td>
           <a href="https://github.com/JasonJWilliamsNY/organization-genomics/blob/gh-pages/lessons/01_intro_organization.md">
@@ -306,25 +310,9 @@ Ivan
       </tr>
     </table>
 </p></a>
-<!--
-  ETHERPAD
 
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
 
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
 
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
 <hr/>
 
